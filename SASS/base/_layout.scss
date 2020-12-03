@@ -11,6 +11,9 @@
     
     &-title {
         font-size: var(--fs-heading-big);
+        font-weight: 400;
+        letter-spacing: .75rem;
+
         position:absolute;
         margin-top: 2rem;
         z-index:1;
@@ -22,6 +25,7 @@
 
     &-undertitle {
         font-size: var(--fs-heading);
+        font-weight: 100;
         position:absolute;
         margin-top: 15rem;
         z-index:1;
