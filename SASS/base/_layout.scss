@@ -1,0 +1,144 @@
+.topsection {
+    // background-image: linear-gradient(to right bottom, #3723aa, #14b0ee);
+    color: #fff;
+    
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    z-index: -1;
+    height: 100vh;
+    width: 100vw;
+    
+    &-title {
+        font-size: var(--fs-heading-big);
+        position:absolute;
+        margin-top: 2rem;
+        z-index:1;
+
+        animation-name: glideIn;
+        animation-duration: 2s;
+        animation-iteration-count: 1;
+    }
+
+    &-undertitle {
+        font-size: var(--fs-heading);
+        position:absolute;
+        margin-top: 15rem;
+        z-index:1;
+        opacity: 0;
+
+        animation-name: showIn;
+        animation-delay: 1300ms;
+        animation-duration: 2s;
+        animation-fill-mode: forwards;
+    }
+
+    &-downarrow {
+        font-size: 12.5rem;
+        position:absolute;
+        margin-top: 70rem;
+        z-index:50;
+        text-decoration: none;
+        color: #fff;
+    }
+
+    &-canvas {
+    z-index: 1;
+    height: 100vh;
+    width: 100vw;
+    }
+
+}
+
+.whatsection {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    
+
+    &-title {
+        color: #Fff;
+        padding: var(--title-padding);
+        font-size: var(--fs-heading-medium);
+    }
+    
+    &-downarrow {
+        margin: 2.5rem auto;
+        font-size: 12.5rem;
+        z-index:50;
+        text-decoration: none;
+        color: #fff;
+    }
+    
+    &-wrapper {
+
+        &_text {
+            align-items: center;
+            width: 60%;
+            margin-left: 5rem;
+    
+            color: #fff;
+    
+            font-size: var(--fs-text-big);
+            font-weight: 400;
+    
+            margin-top: -.5rem;
+            padding: 2rem 2rem;
+    
+            border-left: var(--border-2);
+            border-bottom: var(--border-2);
+        }
+    
+        &_picture {
+            margin-left: 5rem;
+
+            border-left: var(--border-2);
+            border-bottom: var(--border-2);
+        }
+
+        &_picture2 {
+            margin-left: 5rem;
+            height: 70rem;
+
+            border-left: var(--border-2);
+            border-bottom: var(--border-2);
+        }
+    
+}
+
+}
+
+.whatsection2 {
+    height: 100vh;
+    // background-color: #fff;
+
+    &-title {
+        color: #Fff;
+        padding: var(--title-padding);
+        font-size: var(--fs-heading-medium);
+    }
+}
+
+
+@keyframes glideIn {
+    from {
+        margin-right: 100%;
+        
+      }
+    
+      to {
+        margin-left: 0%;
+      }
+}
+
+@keyframes showIn {
+    from {
+        opacity: 0;
+        
+      }
+    
+      to {
+        opacity: 1;
+      }
+}
+
