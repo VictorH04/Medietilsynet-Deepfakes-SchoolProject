@@ -95,6 +95,7 @@
     
         &_picture {
             margin-left: 5rem;
+            padding: 1.5rem 1.5rem;
 
             border-left: var(--border-2);
             border-bottom: var(--border-2);
@@ -102,6 +103,8 @@
 
         &_picture2 {
             margin-left: 5rem;
+            padding: 1.5rem 1.5rem;
+
             height: 70rem;
 
             border-left: var(--border-2);
@@ -113,7 +116,9 @@
 }
 
 .whatsection2 {
-    height: 100vh;
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
     // background-color: #fff;
 
     &-title {
@@ -121,13 +126,95 @@
         padding: var(--title-padding);
         font-size: var(--fs-heading-medium);
     }
+
+    &-text {
+        align-items: center;
+        width: 60%;
+        margin-left: 5rem;
+    
+        color: #fff;
+    
+        font-size: var(--fs-text-big);
+        font-weight: 400;
+    
+        margin-top: -.5rem;
+        padding: 2rem 2rem;
+    
+        border-left: var(--border-2);
+        border-bottom: var(--border-2);
+    }
+
+    &-text2 {
+        align-items: center;
+        width: 60%;
+        margin-left: 5rem;
+    
+        color: #fff;
+    
+        font-size: var(--fs-text-big);
+        font-style: italic;
+        font-weight: 400;
+    
+        margin-top: -.5rem;
+        padding: 2rem 2rem;
+    
+        border-left: var(--border-2);
+        border-bottom: var(--border-2);
+    }
+
+    &-video {
+    height: 55rem;
+    width: 100rem;
+
+    margin-left: 5rem;
+    padding: 1.5rem 1.5rem;
+
+    border-left: var(--border-2);
+    border-bottom: var(--border-2);
+
+    }
+
+    &-downarrow {
+        margin: 2.5rem auto;
+        font-size: 12.5rem;
+        z-index:50;
+        text-decoration: none;
+        color: #fff;
+    }
+}
+
+.mainsection {
+    height: 100vh;
+
+    &-title {
+        color: #Fff;
+        padding: var(--title-padding);
+        font-size: var(--fs-heading-medium);
+    }
+
+    &-text {
+        align-items: center;
+        width: 60%;
+        margin-left: 5rem;
+    
+        color: #fff;
+    
+        font-size: var(--fs-text-big);
+        font-weight: 400;
+    
+        margin-top: -.5rem;
+        padding: 2rem 2rem;
+    
+        border-left: var(--border-2);
+        border-bottom: var(--border-2);
+    }
 }
 
 
 @keyframes glideIn {
     from {
         margin-right: 100%;
-        
+        opacity: 0.1;
       }
     
       to {
