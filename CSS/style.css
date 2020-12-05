@@ -197,6 +197,10 @@ body {
     color: #Fff;
     padding: var(--title-padding);
     font-size: var(--fs-heading-medium); }
+  .mainsection-underheader {
+    font-size: var(--fs-heading);
+    color: #Fff;
+    padding: var(--title-padding); }
   .mainsection-text {
     align-items: center;
     width: 60%;

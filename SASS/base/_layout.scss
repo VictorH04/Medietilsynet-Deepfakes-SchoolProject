@@ -192,6 +192,12 @@
         font-size: var(--fs-heading-medium);
     }
 
+    &-underheader {
+        font-size: var(--fs-heading);
+        color: #Fff;
+        padding: var(--title-padding);
+    }
+
     &-text {
         align-items: center;
         width: 60%;
