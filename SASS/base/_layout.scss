@@ -119,7 +119,8 @@
     min-height: 100vh;
     display: flex;
     flex-direction: column;
-    // background-color: #fff;
+    background: linear-gradient(to bottom right,  #14b0ee 0%, rgba(181,13,30,1) 100%);
+    background-attachment: fixed;
 
     &-title {
         color: #Fff;
@@ -184,6 +185,91 @@
 }
 
 .mainsection {
+    height: 112.5vh;
+    background: linear-gradient(to top right,  #14b0ee 0%, rgba(181,13,30,1) 100%);
+    background-attachment: fixed;
+
+    &-title {
+        color: #Fff;
+        padding: var(--title-padding);
+        font-size: var(--fs-heading-medium);
+    }
+
+    &-underheader {
+        font-size: var(--fs-heading);
+        color: #Fff;
+        padding: var(--title-padding);
+    }
+
+    &-text {
+        align-items: center;
+        width: 60%;
+        margin-left: 5rem;
+    
+        color: #fff;
+    
+        font-size: var(--fs-text-big);
+        font-weight: 400;
+    
+        margin-top: -.5rem;
+        padding: 2rem 2rem;
+    
+        border-left: var(--border-2);
+        border-bottom: var(--border-2);
+    }
+
+    &-picture {
+        height: 50rem;
+        
+        margin-left: 5rem;
+        padding: 1.5rem 1.5rem;
+
+        border-left: var(--border-2);
+        border-bottom: var(--border-2);
+    }
+
+}
+
+.mainsection2 {
+    height: 100vh;
+    background: linear-gradient(to bottom right,  #14b0ee 0%, #20a327 100%);
+    background-attachment: fixed;
+
+    &-underheader {
+        font-size: var(--fs-heading);
+        color: #Fff;
+        padding: var(--title-padding);
+    } 
+
+    &-text {
+        align-items: center;
+        width: 60%;
+        margin-left: 5rem;
+    
+        color: #fff;
+    
+        font-size: var(--fs-text-big);
+        font-weight: 400;
+    
+        margin-top: -.5rem;
+        padding: 2rem 2rem;
+    
+        border-left: var(--border-2);
+        border-bottom: var(--border-2);
+    }
+
+      &-picture {
+        height: 50rem;
+        
+        margin-left: 5rem;
+        padding: 1.5rem 1.5rem;
+
+        border-left: var(--border-2);
+        border-bottom: var(--border-2);
+    }
+}
+
+.mainsection3 {
     height: 100vh;
 
     &-title {

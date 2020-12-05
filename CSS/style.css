@@ -149,7 +149,9 @@ body {
 .whatsection2 {
   min-height: 100vh;
   display: flex;
-  flex-direction: column; }
+  flex-direction: column;
+  background: linear-gradient(to bottom right, #14b0ee 0%, #b50d1e 100%);
+  background-attachment: fixed; }
   .whatsection2-title {
     color: #Fff;
     padding: var(--title-padding);
@@ -192,7 +194,9 @@ body {
     color: #fff; }
 
 .mainsection {
-  height: 100vh; }
+  height: 112.5vh;
+  background: linear-gradient(to top right, #14b0ee 0%, #b50d1e 100%);
+  background-attachment: fixed; }
   .mainsection-title {
     color: #Fff;
     padding: var(--title-padding);
@@ -202,6 +206,60 @@ body {
     color: #Fff;
     padding: var(--title-padding); }
   .mainsection-text {
+    align-items: center;
+    width: 60%;
+    margin-left: 5rem;
+    color: #fff;
+    font-size: var(--fs-text-big);
+    font-weight: 400;
+    margin-top: -.5rem;
+    padding: 2rem 2rem;
+    border-left: var(--border-2);
+    border-bottom: var(--border-2); }
+  .mainsection-picture {
+    height: 50rem;
+    margin-left: 5rem;
+    padding: 1.5rem 1.5rem;
+    border-left: var(--border-2);
+    border-bottom: var(--border-2); }
+
+.mainsection2 {
+  height: 100vh;
+  background: linear-gradient(to bottom right, #14b0ee 0%, #20a327 100%);
+  background-attachment: fixed; }
+  .mainsection2-underheader {
+    font-size: var(--fs-heading);
+    color: #Fff;
+    padding: var(--title-padding); }
+  .mainsection2-text {
+    align-items: center;
+    width: 60%;
+    margin-left: 5rem;
+    color: #fff;
+    font-size: var(--fs-text-big);
+    font-weight: 400;
+    margin-top: -.5rem;
+    padding: 2rem 2rem;
+    border-left: var(--border-2);
+    border-bottom: var(--border-2); }
+  .mainsection2-picture {
+    height: 50rem;
+    margin-left: 5rem;
+    padding: 1.5rem 1.5rem;
+    border-left: var(--border-2);
+    border-bottom: var(--border-2); }
+
+.mainsection3 {
+  height: 100vh; }
+  .mainsection3-title {
+    color: #Fff;
+    padding: var(--title-padding);
+    font-size: var(--fs-heading-medium); }
+  .mainsection3-underheader {
+    font-size: var(--fs-heading);
+    color: #Fff;
+    padding: var(--title-padding); }
+  .mainsection3-text {
     align-items: center;
     width: 60%;
     margin-left: 5rem;
