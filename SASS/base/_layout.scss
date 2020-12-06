@@ -84,7 +84,7 @@
             color: #fff;
     
             font-size: var(--fs-text-big);
-            font-weight: 400;
+            font-weight: 100;
     
             margin-top: -.5rem;
             padding: 2rem 2rem;
@@ -116,7 +116,7 @@
 }
 
 .whatsection2 {
-    min-height: 100vh;
+    height: 145vh;
     display: flex;
     flex-direction: column;
     background: linear-gradient(to bottom right,  #14b0ee 0%, rgba(181,13,30,1) 100%);
@@ -136,7 +136,7 @@
         color: #fff;
     
         font-size: var(--fs-text-big);
-        font-weight: 400;
+        font-weight: 100;
     
         margin-top: -.5rem;
         padding: 2rem 2rem;
@@ -185,7 +185,7 @@
 }
 
 .mainsection {
-    height: 112.5vh;
+    height: 130vh;
     background: linear-gradient(to top right,  #14b0ee 0%, rgba(181,13,30,1) 100%);
     background-attachment: fixed;
 
@@ -205,11 +205,12 @@
         align-items: center;
         width: 60%;
         margin-left: 5rem;
+        font-weight: 100;
     
         color: #fff;
     
         font-size: var(--fs-text-big);
-        font-weight: 400;
+        font-weight: 100;
     
         margin-top: -.5rem;
         padding: 2rem 2rem;
@@ -231,7 +232,9 @@
 }
 
 .mainsection2 {
-    height: 100vh;
+    display: flex;
+    flex-direction: column;
+    height: 140vh;
     background: linear-gradient(to bottom right,  #14b0ee 0%, #20a327 100%);
     background-attachment: fixed;
 
@@ -249,7 +252,7 @@
         color: #fff;
     
         font-size: var(--fs-text-big);
-        font-weight: 400;
+        font-weight: 100;
     
         margin-top: -.5rem;
         padding: 2rem 2rem;
@@ -260,6 +263,7 @@
 
       &-picture {
         height: 50rem;
+        width: 70rem;
         
         margin-left: 5rem;
         padding: 1.5rem 1.5rem;
@@ -267,10 +271,20 @@
         border-left: var(--border-2);
         border-bottom: var(--border-2);
     }
+
+    &-downarrow {
+        margin: 2.5rem auto;
+        font-size: 12.5rem;
+        z-index:50;
+        text-decoration: none;
+        color: #fff;
+    }
+
 }
 
 .mainsection3 {
     height: 100vh;
+    background-color: var(--darkblue1);
 
     &-title {
         color: #Fff;
@@ -300,6 +314,8 @@
         border-left: var(--border-2);
         border-bottom: var(--border-2);
     }
+
+    
 }
 
 
