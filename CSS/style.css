@@ -259,27 +259,35 @@ body {
     color: #fff; }
 
 .mainsection3 {
-  height: 100vh;
+  display: grid;
+  height: 200vh;
   background-color: var(--darkblue1); }
   .mainsection3-title {
+    height: 15rem;
     color: #Fff;
     padding: var(--title-padding);
     font-size: var(--fs-heading-medium); }
-  .mainsection3-underheader {
-    font-size: var(--fs-heading);
-    color: #Fff;
-    padding: var(--title-padding); }
   .mainsection3-text {
     align-items: center;
     width: 60%;
     margin-left: 5rem;
     color: #fff;
     font-size: var(--fs-text-big);
-    font-weight: 400;
+    font-weight: 100;
     margin-top: -.5rem;
+    margin-bottom: 7.5rem;
     padding: 2rem 2rem;
     border-left: var(--border-2);
     border-bottom: var(--border-2); }
+  .mainsection3-gridcontainer {
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-rows: repeat(6, 1fr);
+    width: 60vw;
+    height: 150rem;
+    background-color: var(--cardboard);
+    justify-self: center;
+    align-self: start; }
 
 @keyframes glideIn {
   from {
