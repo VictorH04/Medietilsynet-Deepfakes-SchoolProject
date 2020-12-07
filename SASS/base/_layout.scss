@@ -286,11 +286,12 @@
     display: grid;
     // grid-template-columns: 1fr;
     // grid-template-rows: repeat(2, 1fr);
-    height: 200vh;
+    height: 250vh;
     background-color: var(--darkblue1);
 
     &-title {
         height: 15rem;
+        align-self: center;
         color: #Fff;
         padding: var(--title-padding);
         font-size: var(--fs-heading-medium);
@@ -299,6 +300,8 @@
     &-text {
         align-items: center;
         width: 60%;
+        height: 10rem;
+
         margin-left: 5rem;
     
         color: #fff;
@@ -317,14 +320,79 @@
     &-gridcontainer {
         display: grid;
         grid-template-columns: repeat(2, 1fr);
-        grid-template-rows: repeat(6, 1fr);
+        grid-template-rows: 150px repeat( auto-fit, minmax(250px, 500px));
         width: 60vw;
-        height: 150rem;
+        height: 130rem;
 
         background-color: var(--cardboard);
+        box-shadow: var(--shadow-light-4);
         
         justify-self: center;
         align-self: start;
+
+        &_title {
+            grid-column: 1 / span 2;
+            grid-row: 1 / 1;
+            align-self: start;
+            justify-self: center;
+
+            padding-top: 6.5rem;
+            font-size: var(--fs-heading);
+        }
+
+        &_titleJohannes {
+            grid-column: 1 / span 1;
+            grid-row: 2 / 2;
+            padding-top: 8rem;
+            align-self: start;
+            justify-self: center;
+            font-size: var(--fs-text-big);
+        }
+
+        &_textJohannes {
+            grid-column: 1 / span 1;
+            grid-row: 2 / 2;
+            align-self: center;
+            justify-self: center;
+            font-size: var(--fs-text);
+            font-weight: 300;
+            width: 80%;
+        }
+
+        &_pictureJohannes {
+            grid-column: 2 / 2;
+            grid-row: 2 / 2;
+            justify-self: center;
+            align-self: center;
+            height: 55rem;
+        }
+
+        &_titleVictor {
+            grid-column: 2 / span 2;
+            grid-row: 3 / 3;
+            padding-top: 8rem;
+            align-self: start;
+            justify-self: center;
+            font-size: var(--fs-text-big);
+        }
+
+        &_textVictor {
+            grid-column: 2 / span 2;
+            grid-row: 3 / 3;
+            align-self: center;
+            justify-self: center;
+            font-size: var(--fs-text);
+            font-weight: 300;
+            width: 80%;
+        }
+
+        &_pictureVictor {
+            grid-column: 1 / 1;
+            grid-row: 3 / 3;
+            justify-self: center;
+            align-self: center;
+            height: 55rem;
+        }
 
 
     }
