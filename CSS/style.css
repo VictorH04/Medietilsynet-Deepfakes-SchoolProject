@@ -110,6 +110,7 @@ body {
 
 .whatsection {
   min-height: 100vh;
+  width: 100vw;
   display: flex;
   flex-direction: column; }
   .whatsection-title {
@@ -147,6 +148,7 @@ body {
 
 .whatsection2 {
   height: 145vh;
+  width: 100vw;
   display: flex;
   flex-direction: column;
   background: linear-gradient(to bottom right, #14b0ee 0%, #b50d1e 100%);
@@ -194,6 +196,7 @@ body {
 
 .mainsection {
   height: 130vh;
+  width: 100vw;
   background: linear-gradient(to top right, #14b0ee 0%, #b50d1e 100%);
   background-attachment: fixed; }
   .mainsection-title {
@@ -227,6 +230,7 @@ body {
   display: flex;
   flex-direction: column;
   height: 140vh;
+  width: 100vw;
   background: linear-gradient(to bottom right, #14b0ee 0%, #20a327 100%);
   background-attachment: fixed; }
   .mainsection2-underheader {
@@ -260,7 +264,9 @@ body {
 
 .mainsection3 {
   display: grid;
+  grid-template-rows: 200px 200px 1fr;
   height: 250vh;
+  width: 100vw;
   background-color: var(--darkblue1); }
   .mainsection3-title {
     height: 15rem;
@@ -285,7 +291,7 @@ body {
     display: grid;
     grid-template-columns: repeat(2, 1fr);
     grid-template-rows: 150px repeat(auto-fit, minmax(250px, 500px));
-    width: 60vw;
+    width: 80vw;
     height: 130rem;
     background-color: var(--cardboard);
     box-shadow: var(--shadow-light-4);
