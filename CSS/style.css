@@ -11,6 +11,8 @@
   --lightpink: #e3afbb;
   --yellow: #f7c72c;
   --green: #85c442;
+  --correctColor: #2fa324;
+  --falseColor: #a11d24;
   --shadow-light-1: 0 3.5rem 4rem rgba(0, 0, 0, .4);
   --shadow-dark-1: 0 2rem 6rem rgba(0, 0, 0, .4);
   --shadow-dark-2: 0 2rem 4rem rgba(0, 0, 0, .6);
@@ -394,10 +396,31 @@ body {
   .endsection1-picture1 {
     margin-top: 6rem;
     box-shadow: var(--shadow-light-4);
+    z-index: 1;
     grid-column: 1 / span 2;
     grid-row: 3 / 3;
     align-self: center;
     justify-self: center; }
+  .endsection1-wrongsymbol1 {
+    display: none;
+    margin-top: 6rem;
+    z-index: 99;
+    height: 45rem;
+    grid-column: 1 / span 2;
+    grid-row: 3 / 3;
+    align-self: center;
+    justify-self: center;
+    transition: all .4s; }
+  .endsection1-correctsymbol1 {
+    display: none;
+    margin-top: 6rem;
+    z-index: 99;
+    height: 45rem;
+    grid-column: 1 / span 2;
+    grid-row: 3 / 3;
+    align-self: center;
+    justify-self: center;
+    transition: all .4s; }
   .endsection1-undertext1 {
     display: grid;
     grid-column: 1 / span 2;
@@ -469,6 +492,26 @@ body {
     grid-row: 6 / 6;
     align-self: center;
     justify-self: center; }
+  .endsection1-wrongsymbol2 {
+    display: none;
+    margin-top: 6rem;
+    z-index: 99;
+    height: 45rem;
+    grid-column: 1 / span 2;
+    grid-row: 6 / 6;
+    align-self: center;
+    justify-self: center;
+    transition: all .4s; }
+  .endsection1-correctsymbol2 {
+    display: none;
+    margin-top: 6rem;
+    z-index: 99;
+    height: 45rem;
+    grid-column: 1 / span 2;
+    grid-row: 6 / 6;
+    align-self: center;
+    justify-self: center;
+    transition: all .4s; }
   .endsection1-undertext2 {
     display: grid;
     grid-column: 1 / span 2;
@@ -558,6 +601,24 @@ body {
     align-self: center;
     justify-self: center;
     border-bottom: var(--border-2); }
+  .footer-facebook {
+    grid-column: 1 / span 2;
+    grid-row: 3 / 3;
+    align-self: center;
+    justify-self: center;
+    margin-right: 10rem;
+    vertical-align: middle; }
+  .footer .facebook {
+    height: 5rem; }
+  .footer-twitter {
+    grid-column: 1 / span 2;
+    grid-row: 3 / 3;
+    align-self: center;
+    justify-self: center;
+    margin-left: 10rem;
+    vertical-align: middle; }
+  .footer .twitter {
+    height: 5rem; }
   .footer-undertitle1 {
     grid-column: 1 / span 2;
     grid-row: 4 / 4;
@@ -593,6 +654,20 @@ body {
     font-size: var(--fs-text-big);
     font-weight: 100;
     color: #fff; }
+
+.disabled {
+  pointer-events: none;
+  cursor: not-allowed;
+  opacity: 0.65;
+  filter: alpha(opacity=65);
+  -webkit-box-shadow: none;
+  box-shadow: none; }
+
+.displayOn {
+  display: block; }
+
+.displayOff {
+  display: none; }
 
 @keyframes glideIn {
   from {

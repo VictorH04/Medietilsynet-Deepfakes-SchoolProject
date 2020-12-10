@@ -474,11 +474,45 @@
         margin-top: 6rem;
         box-shadow: var(--shadow-light-4);
 
+        z-index: 1;
+
         grid-column: 1 / span 2;
         grid-row: 3 / 3;
 
         align-self: center;
         justify-self: center;
+    }
+
+    &-wrongsymbol1 {
+        display: none;
+        margin-top: 6rem;
+
+        z-index: 99;
+        height: 45rem;
+
+        grid-column: 1 / span 2;
+        grid-row: 3 / 3;
+
+        align-self: center;
+        justify-self: center;
+
+        transition: all .4s;
+    }
+
+    &-correctsymbol1 {
+        display: none;
+        margin-top: 6rem;
+        
+        z-index: 99;
+        height: 45rem;
+
+        grid-column: 1 / span 2;
+        grid-row: 3 / 3;
+
+        align-self: center;
+        justify-self: center;
+
+        transition: all .4s;
     }
 
     &-undertext1 {
@@ -584,6 +618,38 @@
 
         align-self: center;
         justify-self: center;
+    }
+
+    &-wrongsymbol2 {
+        display: none;
+        margin-top: 6rem;
+
+        z-index: 99;
+        height: 45rem;
+
+        grid-column: 1 / span 2;
+        grid-row: 6 / 6;
+
+        align-self: center;
+        justify-self: center;
+
+        transition: all .4s;
+    }
+
+    &-correctsymbol2 {
+        display: none;
+        margin-top: 6rem;
+        
+        z-index: 99;
+        height: 45rem;
+
+        grid-column: 1 / span 2;
+        grid-row: 6 / 6;
+
+        align-self: center;
+        justify-self: center;
+
+        transition: all .4s;
     }
 
     &-undertext2 {
@@ -717,6 +783,37 @@
         border-bottom: var(--border-2);
     }
 
+    &-facebook {
+        // height: 8rem;
+        grid-column: 1 / span 2;
+        grid-row: 3 / 3;
+        
+        align-self: center;
+        justify-self: center;
+
+        margin-right: 10rem;
+        vertical-align: middle;
+    }
+
+    .facebook {
+        height: 5rem;
+    }
+
+    &-twitter {
+        grid-column: 1 / span 2;
+        grid-row: 3 / 3;
+        
+        align-self: center;
+        justify-self: center;
+
+        margin-left: 10rem;
+        vertical-align: middle;
+    }
+
+    .twitter {
+        height: 5rem;
+    }
+
     &-undertitle1 {
         grid-column: 1 / span 2;
         grid-row: 4 / 4;
@@ -772,6 +869,22 @@
 
 }
 
+.disabled {
+    pointer-events: none;
+    cursor: not-allowed;
+    opacity: 0.65;
+    filter: alpha(opacity=65);
+    -webkit-box-shadow: none;
+    box-shadow: none;
+}
+
+.displayOn {
+    display: block;
+}
+
+.displayOff {
+    display: none;
+}
 
 @keyframes glideIn {
     from {

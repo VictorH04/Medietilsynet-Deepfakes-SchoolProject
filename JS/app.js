@@ -59,3 +59,152 @@ for (let i = 0; i < maxParticles; i++) {
 }
 // context.fillstyle = 'blue';
 animate();
+
+
+// ! True or false game thing
+
+// Get everything
+const realBtn1 = document.querySelector('.endsection1-ekteBtn1');
+const realBtn2 = document.querySelector('.endsection1-ekteBtn2');
+
+const fakeBtn1 = document.querySelector('.endsection1-fakeBtn1');
+const fakeBtn2 = document.querySelector('.endsection1-fakeBtn2');
+
+const correctText1 = document.querySelector('.endsection1-correctText1');
+const correctText2 = document.querySelector('.endsection1-correctText2');
+
+const wrongText1 = document.querySelector('.endsection1-wrongText1');
+const wrongText2 = document.querySelector('.endsection1-wrongText2');
+
+const defaultText1 = document.querySelector('.endsection1-undertext1');
+const defaultText2 = document.querySelector('.endsection1-undertext2');
+
+const wrongSymbol1 = document.querySelector('.endsection1-wrongsymbol1');
+const wrongSymbol2 = document.querySelector('.endsection1-wrongsymbol2');
+
+const correctSymbol1 = document.querySelector('.endsection1-correctsymbol1');
+const correctSymbol2 = document.querySelector('.endsection1-correctsymbol2');
+
+// Event listeners for the game
+realBtn1.addEventListener('click', (event) => {
+	event.preventDefault();
+	
+	defaultText1.style.display = 'none';
+	wrongText1.animate([ { opacity: '.1' }, { opacity: '1' } ], { duration: 250, fill: 'forwards' });
+	wrongText1.style.display = 'grid';
+
+	realBtn1.style.backgroundColor = '#a11d24';
+
+	disableFakeBtn1();
+	displayOnWrongSymbol1();
+	displayOffCorrectSymbol1();
+});
+
+fakeBtn1.addEventListener('click', (event) => {
+	event.preventDefault();
+
+	defaultText1.style.display = 'none';
+	correctText1.animate([ { opacity: '.1' }, { opacity: '1' } ], { duration: 250, fill: 'forwards' });
+	correctText1.style.display = 'grid';
+
+	fakeBtn1.style.backgroundColor = '#2fa324';
+	
+	disableRealBtn1();
+	displayOnCorrectSymbol1();
+	displayOffWrongSymbol1();
+});
+
+realBtn2.addEventListener('click', (event) => {
+	event.preventDefault();
+
+	defaultText2.style.display = 'none';
+	correctText2.animate([ { opacity: '.1' }, { opacity: '1' } ], { duration: 250, fill: 'forwards' });
+	correctText2.style.display = 'grid';
+
+	realBtn2.style.backgroundColor = '#2fa324';
+
+	disableFakeBtn2();
+	displayOnCorrectSymbol2();
+	displayOffWrongSymbol2();
+});
+
+fakeBtn2.addEventListener('click', (event) => {
+	event.preventDefault();
+
+	defaultText2.style.display = 'none';
+	wrongText2.animate([ { opacity: '.1' }, { opacity: '1' } ], { duration: 250, fill: 'forwards' });
+	wrongText2.style.display = 'grid';
+
+	disableRealBtn2();
+	displayOnWrongSymbol2();
+	displayOffnCorrectSymbol2();
+});
+
+// Functions which disable buttons and appear right symbols
+
+//! Disable
+function disableFakeBtn1(event) {
+	fakeBtn1.classList.add('disabled');
+};
+
+function disableFakeBtn2(event) {
+	fakeBtn2.classList.add('disabled');
+};
+
+function disableRealBtn1(event) {
+	realBtn1.classList.add('disabled');
+};
+
+function disableRealBtn2(event) {
+	realBtn2.classList.add('disabled');
+};
+
+//! Display On Wrong Symbol
+
+function displayOnWrongSymbol1(event) {
+	wrongSymbol1.animate([ { opacity: '.1' }, { opacity: '1' } ], { duration: 250, fill: 'forwards' });
+	wrongSymbol1.classList.add('displayOn');
+};
+
+function displayOnWrongSymbol2(event) {
+	wrongSymbol2.animate([ { opacity: '.1' }, { opacity: '1' } ], { duration: 250, fill: 'forwards' });
+	wrongSymbol2.classList.add('displayOn');
+};
+
+
+//! Display off Wrong Symbol
+
+function displayOffWrongSymbol1(event) {
+	wrongSymbol1.animate([ { opacity: '.1' }, { opacity: '1' } ], { duration: 250, fill: 'forwards' });
+	wrongSymbol1.classList.add('displayOff');
+};
+
+function displayOffWrongSymbol2(event) {
+	wrongSymbol2.animate([ { opacity: '.1' }, { opacity: '1' } ], { duration: 250, fill: 'forwards' });
+	wrongSymbol2.classList.add('displayOff');
+};
+
+//! Display On Correct Symbol
+
+function displayOnCorrectSymbol1(event) {
+	correctSymbol1.animate([ { opacity: '.1' }, { opacity: '1' } ], { duration: 250, fill: 'forwards' });
+	correctSymbol1.classList.add('displayOn');
+};
+
+function displayOnCorrectSymbol2(event) {
+	correctSymbol2.animate([ { opacity: '.1' }, { opacity: '1' } ], { duration: 250, fill: 'forwards' });
+	correctSymbol2.classList.add('displayOn');
+};
+
+
+//! Display off Correct Symbol
+
+function displayOffCorrectSymbol1(event) {
+	correctSymbol1.animate([ { opacity: '.1' }, { opacity: '1' } ], { duration: 250, fill: 'forwards' });
+	correctSymbol1.classList.add('displayOff');
+};
+
+function displayOffnCorrectSymbol2(event) {
+	correctSymbol2.animate([ { opacity: '.1' }, { opacity: '1' } ], { duration: 250, fill: 'forwards' });
+	correctSymbol2.classList.add('displayOff');
+};
